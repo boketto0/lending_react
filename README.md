@@ -1,4 +1,5 @@
 Lending DS React
+![image](https://user-images.githubusercontent.com/56611587/225450526-1336271b-8a1e-49cb-b130-74c6bb472a58.png)
 
 1. Лендинг создан на react. Представляет собой одностраничный сайт с определенными блоками: header, mainblock etc.
 2. Ссылка на требования.
