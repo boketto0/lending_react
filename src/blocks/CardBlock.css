@@ -1,0 +1,10 @@
+.elements {
+    position:relative;
+    margin-left: 61px;
+    width: auto;
+    transition: all 0,2s;
+    flex-basis: 25%;
+  }
+  .elements:hover {
+        flex-basis: 50%;
+  }
