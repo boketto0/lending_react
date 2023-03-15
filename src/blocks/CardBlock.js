@@ -1,11 +1,11 @@
 import './CardBlock.css'
 import Elements from './Elements'
-import Card from '../cards/Card'
+import Cards from '../cards/Cards'
 
 function CardBlock(props) {
     
     return(
-        <Card className="elements">
+        <Cards className="elements">
         <Elements 
         picture={props.elements[0].picture} 
         title={props.elements[0].title} 
@@ -26,7 +26,7 @@ function CardBlock(props) {
         title={props.elements[3].title} 
         text={props.elements[3].text} 
         />
-      </Card>
+      </Cards>
     )
 }
 

@@ -1,5 +1,4 @@
 import './Elements.css'
-import Card from '../cards/Card';
 
 function Elements(props) {
     return (
