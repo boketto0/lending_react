@@ -1,8 +1,0 @@
-.card {
-    border-radius: 10px;
-    display: grid;
-    grid-template-columns: repeat(4, 334px);
-    grid-template-rows: repeat(4, 259px);
-    gap: 32px;
-    /*переименовать компонент card/blocks, переделать на flex, по горизонтали, вертикали*/
-}

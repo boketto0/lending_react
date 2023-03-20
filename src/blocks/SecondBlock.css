@@ -1,16 +1,68 @@
-.block {
-    position: relative;
-    width: 100%;
-    top: 1057px;
-    height: auto;
-  }
-.card1-picture {
-    position: absolute;
-    width: 204px;
-    height: 62px;
-    left: 0px;
-    top: 0px;
-    background: #FFFFFF;
-    box-shadow: 0px 1px 2px rgba(38, 38, 38, 0.04), 0px 4px 8px rgba(38, 38, 38, 0.16);
-    border-radius: 6px;
+.second-block {
+  position: absolute;
+  width: 100%;
+  top: 1089px;
+  height: 473px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: white;
+  font-family: 'SB Sans Text';
+  font-style: normal;
+}
+
+.second-block__container {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  width: 1359px;
+  height: 624px;
+  margin-left: 274px;
+  margin-top: 79px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  text-align: left;
+  align-items: center;
+}
+
+.second-block__container__title{
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 120%;
+  letter-spacing: -0.02em;
+  color: #101828;
+  font-weight: bold;
+}
+
+.second-block__container__text {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  color: #797E8B;
+  margin-top: 50px;
+}
+
+.second-block__picture {
+  width: 624px;
+  height: 516px;
+  box-sizing: content-box;
+  background-color: #797E8B;
+  border-radius: 20px;
+}
+
+.second-block__title {
+  color: #1D293F;
+  margin-top: 32px;
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 120%;
+  letter-spacing: -0.02em;
+}
+
+.second-block__text {
+  color: #797E8B;
+  margin-top: 32px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
 }

@@ -1,39 +1,39 @@
-import './CardBlock2.css'
-import Cards2 from '../../cards/Cards2';
-import Elements2 from './Elements2';
+import './CardBlock1.css'
+import Cards1 from '../cards/Cards1';
+import Elements1 from './Elements1';
 
-function CardBlock2(props) {
-
+function CardBlock1(props) {
+  
     return(
-        <Cards2 className="elements">
-          <Elements2
+        <Cards1 className="card-block__elements1 ">
+          <Elements1 
             picture={props.elements[0].picture} 
             title={props.elements[0].title} 
             text={props.elements[0].text} 
           />
-          <Elements2
+          <Elements1
             picture={props.elements[1].picture} 
             title={props.elements[1].title} 
             text={props.elements[1].text} 
           />
-          <Elements2
+          <Elements1
             picture={props.elements[2].picture} 
             title={props.elements[2].title} 
             text={props.elements[2].text} 
           />
-          <Elements2
+          <Elements1
             picture={props.elements[3].picture} 
             title={props.elements[3].title} 
             text={props.elements[3].text} 
           />
-            <Elements2
+            <Elements1
             picture={props.elements[4].picture} 
             title={props.elements[4].title} 
             text={props.elements[4].text} 
           />
-      </Cards2>
+      </Cards1>
     )
     // const { picture } = 
 }
 
-export default CardBlock2;
+export default CardBlock1;

@@ -1,20 +1,16 @@
 
-
 .first-block {
     position: absolute;
-    top: 58px;
     width: 100%;
     height: 1057px;
-    left: 0px;
-    top: 0px;
     text-align: center;
     justify-content: center;
-    align-items: center;
+    align-items:stretch;
     background: #F3F7FF;
 }
 
-.block-circle1 {
-    position: sticky;
+
+.first-block__circle1 {
     width: 700px;
     height: 700px;
     left: 1525px;
@@ -24,8 +20,9 @@
     filter: blur(350px)
 }
 
-.block-circle2 {
-    position: absolute;
+
+.first-block__circle2 {
+    bottom: 0px;
     width: 700px;
     height: 700px;
     left: -204px;
@@ -35,7 +32,8 @@
     
 }
 
-.block-title__text {
+
+.first-block__title {
     position: relative;
     top: 132px;
     width: 692px;
@@ -51,7 +49,8 @@
     margin: auto;
 }
 
-.block-text1 {
+
+.first-block__text1 {
     position: relative;
     top: 194px;
     width: 692px;

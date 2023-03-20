@@ -1,4 +1,5 @@
-.block2 {
+.third-block {
+    position: absolute;
     width: 100%;
     top: 2270px;
     height: 1341px;
@@ -8,15 +9,9 @@
     font-family: 'SB Sans Text';
     font-style: normal;
   }
+
   
-  .picture2-block {
-    width: 624px;
-    height: 516px;
-    box-sizing: border-box;
-    background-color: #797E8B;
-  }
-  
-  .block2-title {
+  .third-block__title {
     color: #1D293F;
     margin-top: 32px;
     font-weight: 700;
@@ -25,7 +20,8 @@
     letter-spacing: -0.02em;
   }
   
-  .block2-text {
+  
+  .third-block__text {
     color: #797E8B;
     margin-top: 32px;
     font-weight: 400;

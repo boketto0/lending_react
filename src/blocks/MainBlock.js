@@ -2,15 +2,16 @@ import './MainBlock.css'
 import Header from './Header';
 import FirstBlock from './FirsBlock';
 import SecondBlock from './SecondBlock';
+import ThirdBlock from './ThirdBlock';
 
 function MainBlock() {
+
     return(
-        <div>
-            <div className='main-block'>
-                <FirstBlock></FirstBlock>
-                <Header></Header>
-                <SecondBlock/>
-            </div>
+        <div className='main-block'>
+            <FirstBlock/>
+            <Header/>
+            <ThirdBlock/>
+            <SecondBlock/>
         </div>
     )
 }
