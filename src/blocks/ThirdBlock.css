@@ -1,0 +1,35 @@
+.block2 {
+    width: 100%;
+    top: 2270px;
+    height: 1341px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: 'SB Sans Text';
+    font-style: normal;
+  }
+  
+  .picture2-block {
+    width: 624px;
+    height: 516px;
+    box-sizing: border-box;
+    background-color: #797E8B;
+  }
+  
+  .block2-title {
+    color: #1D293F;
+    margin-top: 32px;
+    font-weight: 700;
+    font-size: 38px;
+    line-height: 120%;
+    letter-spacing: -0.02em;
+  }
+  
+  .block2-text {
+    color: #797E8B;
+    margin-top: 32px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+  }
+  
