@@ -12,17 +12,15 @@
 }
 
 .second-block__container {
-  position: absolute;
   display: flex;
   flex-direction: row;
   width: 1359px;
   height: 624px;
-  margin-left: 274px;
   margin-top: 79px;
   flex-wrap: wrap;
   justify-content: space-between;
   text-align: left;
-  align-items: center;
+  margin-left: 15%;
 }
 
 .second-block__container__title{
@@ -66,3 +64,12 @@
   font-size: 20px;
   line-height: 24px;
 }
+
+.second-block__container__circles {
+  background: #E2E9FD;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  margin-right: 16px;
+}
+

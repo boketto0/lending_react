@@ -1,39 +1,53 @@
 import './CardBlock1.css'
 import Cards1 from '../cards/Cards1';
-import Elements1 from './Elements1';
 
 function CardBlock1(props) {
-  
+
+
+  const elements = [
+    {
+      picture: '',
+      title: 'Button',
+      text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Blandit pellentesque eu eget.'
+    },
+    {
+      picture: '',
+      title: 'Alerts',
+      text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Blandit pellentesque eu eget.'
+    },
+    {
+      picture: '',
+      title: 'Button group',
+      text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Blandit pellentesque eu eget.'
+    },
+    {
+      picture: '',
+      title: 'Modal',
+      text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Blandit pellentesque eu eget.'
+    },
+    {
+      picture: '',
+      title: 'Date picker',
+      text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Blandit pellentesque eu eget.'
+    }
+]
+
+
     return(
         <Cards1 className="card-block__elements1 ">
-          <Elements1 
-            picture={props.elements[0].picture} 
-            title={props.elements[0].title} 
-            text={props.elements[0].text} 
-          />
-          <Elements1
-            picture={props.elements[1].picture} 
-            title={props.elements[1].title} 
-            text={props.elements[1].text} 
-          />
-          <Elements1
-            picture={props.elements[2].picture} 
-            title={props.elements[2].title} 
-            text={props.elements[2].text} 
-          />
-          <Elements1
-            picture={props.elements[3].picture} 
-            title={props.elements[3].title} 
-            text={props.elements[3].text} 
-          />
-            <Elements1
-            picture={props.elements[4].picture} 
-            title={props.elements[4].title} 
-            text={props.elements[4].text} 
-          />
+
+          { elements.map((el) => {
+            return(
+              <div className='element1-item'>
+                <div className='element1-item__picture'>{el.picture}</div>
+                <div className='element1-item__title'>{el.title}</div>
+                <div className='element1-item__text'>{el.text}</div>
+              </div>
+            )
+          })}
       </Cards1>
     )
-    // const { picture } = 
+
 }
 
 export default CardBlock1;

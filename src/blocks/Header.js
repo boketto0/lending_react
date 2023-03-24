@@ -1,4 +1,5 @@
 import './Header.css'
+import Button from './Button';
 
 function Header() {
     return(

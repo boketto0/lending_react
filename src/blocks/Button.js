@@ -1,20 +1,10 @@
 import "./Button.css";
 
-function Button(props) {
-    const items = [
-        {
-            text: 'Задать вопрос',
-        },
-        {
-            text: 'Все компоненты',
-        },
-        {
-            text: 'Все компоненты',
-        },
-        {
-            text: 'Задать вопрос',
-        },
-    ]
+function Button() {
+
+    return(
+        <div className='button'></div>
+    )
 }
 
 export default Button;

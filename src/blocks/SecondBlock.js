@@ -1,46 +1,17 @@
 import CardBlock1 from "../cardsRow1/CardBlock1";
 import './SecondBlock.css'
+import Button from "./Button";
 
 function SecondBlock() {
-    const elements = [
-      {
-        picture: <img src ="src\images\Block1Picture.jpg" alt="..."></img>,
-        title: 'Button',
-        text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Blandit pellentesque eu eget.'
-      },
-      {
-        picture: <img src ="src\images\Block1Picture.jpg" alt="..."></img>,
-        title: 'Alerts',
-        text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Blandit pellentesque eu eget.'
-      },
-      {
-        picture: <img src ="src\images\Block1Picture.jpg" alt="..."></img>,
-        title: 'Button group',
-        text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Blandit pellentesque eu eget.'
-      },
-      {
-        picture: <img src ="src\images\Block1Picture.jpg" alt="..."></img>,
-        title: 'Modal',
-        text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Blandit pellentesque eu eget.'
-      },
-      {
-        picture: <img src ="src\images\Block1Picture.jpg" alt="..."></img>,
-        title: 'Date picker',
-        text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Blandit pellentesque eu eget.'
-      }
-  ]
-  
-  //под капотом
-  /*return React.createElement('div', {}, 
-  React.createElement('h1', {}, 'Hello'),
-  React.createElement(elements, {elements: elements} ));*/
+
   return(
     <div className="second-block">
       <div className='second-block__title'>Компоненты
       </div>
       <div className='second-block__text'>База компонентов для создания интерфейсов любой сложности
       </div>
-      <CardBlock1 elements={elements}/>
+      <CardBlock1/>
+      <Button/>
       <div className='second-block__container'>
             <div className='second-block__picture'/>
             <div>

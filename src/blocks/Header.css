@@ -71,3 +71,8 @@ a {
     margin-right: 16px;
     /*кратное 4 или 8 px*/
 }
+
+.heder-button__icon {
+    border-radius: 50%;
+    color: #FFFFFF;
+}
