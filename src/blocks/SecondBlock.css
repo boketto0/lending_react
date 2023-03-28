@@ -21,6 +21,7 @@
   justify-content: space-between;
   text-align: left;
   margin-left: 15%;
+  white-space:pre-wrap;
 }
 
 .second-block__container__title{
@@ -37,14 +38,13 @@
   font-size: 20px;
   line-height: 24px;
   color: #797E8B;
-  margin-top: 50px;
+  margin-top: 16px;
 }
 
 .second-block__picture {
   width: 624px;
   height: 516px;
   box-sizing: content-box;
-  background-color: #797E8B;
   border-radius: 20px;
 }
 

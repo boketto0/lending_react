@@ -1,20 +1,18 @@
 import './Header.css'
-import Button from './Button';
+import Icon from '../images/sber tech.svg'
 
 function Header() {
     return(
         <div className='header-block'>
-            <img src="C:\Users\User\Desktop\сбер\Work\lending\src\images\sber tech.svg" class="header-title" alt="..."></img>
+            <img className='header-icon' src={Icon}/>
             <div className='header-text'>
                 <div className='header-text1 header-text__design'>
                 <a href = "#">Дизайн</a></div>
                 <div className='header-text2'>
                 <a href = "#">Разработка</a></div>
             </div>
-            <div className='header-button'>
-                <div className='header-button__text'>Задать вопрос</div>
-            </div>
-        </div>
+            {/* <ButtonData className="header-button"/>      */}
+           </div>
     )
 }
 

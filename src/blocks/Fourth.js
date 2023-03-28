@@ -1,5 +1,6 @@
 import './Fourth.css'
 import CardBlock3 from '../cardRow3/CardBlock3';
+import List3 from '../listRow3/List3';
 
 function Fourth() {
 
@@ -17,21 +18,7 @@ function Fourth() {
                 {"\n"}вопросы, чтобы вы могли понять и решить 
                 {"\n"}свою возникшую проблему
             </div>
-            <div className='fourth-block__container__text'>
-                Что такое дизайн-система?
-            </div>
-            <div className='fourth-block__container__text'>
-                Для каких задач подходит?
-            </div>
-            <div className='fourth-block__container__text'>
-                Как использовать дизайн-систему?
-            </div>
-            <div className='fourth-block__container__text'>
-                Что такое компонент?
-            </div>
-            <div className='fourth-block__container__text'>
-                Зачем нужна документация?
-            </div>
+            <List3/>
         </div>
         </div>
     )

@@ -1,22 +1,24 @@
 import './CardBlock3.css'
 import Cards3 from '../cards/Cards3';
+import Icon1 from '../images/card3_images/card3.1.svg'
+import Icon2 from '../images/card3_images/card3.2.svg'
 
 function CardBlock3(props) {
 
 
   const elements3 = [
     {
-      picture: '',
+      picture: <img src={Icon1}/>,
       title: 'Версия 2.0',
       text: '14 мая 2022 '
     },
     {
-      picture: '',
+      picture: <img src={Icon1}/>,
       title: 'Версия 2.0',
       text: '14 мая 2022'
     },
     {
-      picture: '',
+      picture: <img src={Icon2}/>,
       title: 'Версия 1.0',
       text: 'Доработка и улучшение документа', 
     }

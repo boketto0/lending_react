@@ -6,7 +6,7 @@
     width: 100%;
     height: 1057px;
     text-align: center;
-    justify-content: center;
+    justify-content:space-between;
     background: #F3F7FF;
     align-items: center;
     font-family: 'SB Sans Text';
@@ -42,18 +42,38 @@
 
 .first-block__title {
     color: #101828;
+    margin-top: 74px;
 }
 
 
 .first-block__text1 {
     color: #006EFF;
+    margin-top: 16px;
+}
+
+.first-block__picture__block {
+    width: 1666px;
+    height: 757px;
 }
 
 .first-block__picture1 {
-    left: 357px;
-    top: 300px;
+    position: absolute;
+    left: 123px;
+    top: 290px;
+}
+
+.first-block__picture2 {
     filter: drop-shadow(-15px 4px 40px rgba(0, 0, 0, 0.11));
     align-self: center;
+    position: absolute;
+    left: 357px;
+    bottom: 0px;
+}
+
+.first-block__picture3 {
+    position: absolute;
+    left: 1506px;
+    top: 696px;
 }
 
 

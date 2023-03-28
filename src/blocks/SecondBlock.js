@@ -1,6 +1,8 @@
 import CardBlock1 from "../cardsRow1/CardBlock1";
 import './SecondBlock.css'
-import Button from "./Button";
+import Button from "../button/Button";
+import Icon from '../images/secondblock_images/secondblock_picture1.png'
+import List1 from "../listRow1/List1";
 
 function SecondBlock() {
 
@@ -13,13 +15,12 @@ function SecondBlock() {
       <CardBlock1/>
       <Button/>
       <div className='second-block__container'>
-            <div className='second-block__picture'/>
+            <img className='second-block__picture' src={Icon}/>
             <div>
                 <div className='second-block__container__title'>Зачем вам дизайн система?</div>
-                <div className='second-block__container__text'>Запускать продукты быстрее и дешевле</div>
-                <div className='second-block__container__text'>Просто проверять гипотезы</div>
-                <div className='second-block__container__text'>Только лучшие практики</div>
-                <div className='second-block__container__text'>Довольные пользователи</div>
+                <div className='second-block__container__text'>Кнопки, иконки, списки, таблицы — основные 
+                    {"\n"}элементы, из которых собирается интерфейс</div>
+                <List1/>
             </div>
         </div>
     </div>

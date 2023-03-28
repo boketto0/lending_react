@@ -1,19 +1,22 @@
 import './CardBlock2.css'
 import Cards2 from '../cards/Cards2';
+import Icon1 from '../images/cards2_images/card2.1.svg'
+import Icon2 from '../images/cards2_images/card2.2.svg'
+import Icon3 from '../images/cards2_images/card2.3.svg'
 
 function CardBlock2(props) {
 
   const elements2 = [
     {
-        picture: '',
+        picture: <img src={Icon1}/>,
         title: 'Справочники',
     },
     {
-        picture: '',
+        picture: <img src={Icon2}/>,
         title: 'Интерактивная документация',
     },
     {
-        picture: '',
+        picture: <img src={Icon3}/>,
         title: 'Панель центра уведомлений',
     }
 ]

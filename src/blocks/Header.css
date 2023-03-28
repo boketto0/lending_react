@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content:space-between;
     text-align: center;
     position: absolute;
     width: 100%;
@@ -17,25 +17,9 @@
 }
 
 .header-button {
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
     margin-left: auto;
     width: 165px;
     height: 32px;
-    background: #006EFF;
-    border: 1px solid #006EFF;
-    border-radius: 6px;
-}
-
-.header-button__text {
-    position: absolute;
-    color: #FFFFFF;
-    line-height: 16px;
-    height: 16px;
 }
 
 .header-title {
@@ -58,8 +42,13 @@
     display: flex;
     letter-spacing: 0.03em;
     line-height: 16px;
-    padding-left: 45%;
     height: 16px;
+    margin-left: 47%;
+}
+
+.header-icon {
+    position: absolute;
+    padding: 20px;
 }
 
 a {
