@@ -34,10 +34,6 @@
     color: #797E8B;
 }
 
-.header-text2 {
-    color: #797E8B;
-}
-
 .header-text {
     display: flex;
     letter-spacing: 0.03em;
@@ -56,12 +52,13 @@ a {
     text-decoration: none;
 }
 
+a:hover {
+    cursor: pointer;
+    color: black;
+    text-decoration: underline;
+}
+
 .header-text__design {
     margin-right: 16px;
     /*кратное 4 или 8 px*/
-}
-
-.heder-button__icon {
-    border-radius: 50%;
-    color: #FFFFFF;
 }

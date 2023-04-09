@@ -1,11 +1,19 @@
 import "./Button.css";
 
-function Button(props) {
+let Button = (props) => {
 
   return(
-    <div className={`button button-${props.position} button button-${props.size}`}>
+    <div className={`
+        button button-${props.position}
+        button button-${props.size}
+        button button-${props.color}
+        button button-${props.border}
+        `}>
         <div className="button-text">{props.text}</div>
-        {props.icon && <div>{props.icon}</div>} 
+        <div className="button-text__border">{props.text__border}</div>
+        <div className="button-line__text">{props.line__text}</div>
+
+        {props.icon && <div className="button-icon">{props.icon}</div>} 
     </div>
   )
 

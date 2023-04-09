@@ -6,9 +6,10 @@ import List1 from "../listRow1/List1";
 
 function SecondBlock(props) {
 
-  const text='Все компоненты'
   const size = 'middle'
   const position = 'center'
+  const border = 'border'
+  const text__border ='Все компоненты'
 
   return(
     <div className="second-block">
@@ -17,7 +18,7 @@ function SecondBlock(props) {
       <div className='second-block__text'>База компонентов для создания интерфейсов любой сложности
       </div>
       <CardBlock1/>
-      <Button text={text} size={size} position={position}/>
+      <Button size={size} position={position} border={border} text__border={text__border}/>
       <div className='second-block__container'>
             <img className='second-block__picture' src={Icon}/>
             <div className="second-block__text__block">

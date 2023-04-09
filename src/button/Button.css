@@ -3,18 +3,14 @@
     box-sizing: border-box;
     display: flex;
     flex-direction: row-reverse;
-    justify-content:space-around;
+    justify-content:center;
     align-items: center;
     text-align: center;
-    background: #006EFF;
-    border: 1px solid #006EFF;
     border-radius: 6px;
-    width: 165px;
-    height: 32px;
 }
 
-.button:hover {
-    background-color: blue;
+.button-icon {
+    margin-right: 8px;
 }
 
 .button-text {
@@ -23,9 +19,60 @@
     height: 16px;
 }
 
+.button-small {
+    width: 165px;
+    height: 32px;
+}
+
 .button-middle {
     width: 196px;
     height: 48px;
+}
+
+.button-large {
+    width: 228px;
+    height: 64px;
+}
+
+.button-color {
+    background: #006EFF;
+    border: 1px solid #006EFF;
+}
+
+.button-color:hover {
+    background-color: blue;
+    cursor: pointer;
+}
+
+.button-border {
+    border: 1px solid #006EFF;
+}
+
+.button-border:hover {
+    border: 1px solid blue;
+}
+
+.button-text__border {
+    color:black;
+    line-height: 16px;
+    height: 16px;
+}
+
+.button-text__border:hover {
+    color: grey;
+    cursor: pointer;
+}
+
+.button-line__text {
+    color:black;
+    line-height: 16px;
+    height: 16px;
+}
+
+.button-line__text:hover {
+    color: grey;
+    cursor: pointer;
+    text-decoration: underline;
 }
 
 .button-center {

@@ -6,8 +6,8 @@ import List2 from "../listRow2/List2";
 
 function ThirdBlock(props) {
 
-    const text='Все компоненты'
-    const size = 'middle'
+    const line__text='Все компоненты'
+    const size = 'large'
     const position = 'center'
 
     return(
@@ -17,7 +17,7 @@ function ThirdBlock(props) {
         <div className='third-block__text'>База компонентов для создания интерфейсов любой сложности
         </div>
         <CardBlock2/>
-        <Button text={text} size={size} position={position}/>
+        <Button line__text={line__text} size={size} position={position}/>
         <div className="third-block__container">
                 <img src={Icon1} className="third-block__picture"/>
                 <div>
