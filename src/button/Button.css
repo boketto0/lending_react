@@ -1,0 +1,42 @@
+.button {
+    position: relative;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content:space-around;
+    align-items: center;
+    text-align: center;
+    background: #006EFF;
+    border: 1px solid #006EFF;
+    border-radius: 6px;
+    width: 165px;
+    height: 32px;
+}
+
+.button:hover {
+    background-color: blue;
+}
+
+.button-text {
+    color: #FFFFFF;
+    line-height: 16px;
+    height: 16px;
+}
+
+.button-middle {
+    width: 196px;
+    height: 48px;
+}
+
+.button-center {
+    margin-left: 45%;
+}
+
+.button-right {
+    margin-right: 28px;
+}
+
+.button-left {
+    align-self: baseline;
+    margin-top: 32px;
+}

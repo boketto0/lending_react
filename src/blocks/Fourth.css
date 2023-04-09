@@ -7,7 +7,7 @@
     justify-content: center;
     text-align: center;
     background: #BCCBFB;
-    font-family: 'SB Sans Text';
+    font-family: 'Source Sans Pro';
     font-style: normal;
     white-space:pre-wrap;
   }
@@ -80,4 +80,27 @@
     border: 1px solid #D0D3DD;
     border-radius: 6px;
     color: #101828;
+  }
+
+  .fourth-block__circle1 {
+    width: 700px;
+    height: 700px;
+    border-radius: 50%;
+    background: #006EFF;
+    filter: blur(350px);
+  }
+
+  .fourth-block__circle2 {
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    background: #83A2FF;
+    filter: blur(200px);
+  }
+
+  .fourth-circle__block {
+    height: 600px;
+    position: relative;
+    width: 100%;
+    top: 3700px;
   }

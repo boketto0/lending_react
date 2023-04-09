@@ -21,6 +21,7 @@ function CardBlock3(props) {
       picture: <img src={Icon2}/>,
       title: 'Версия 1.0',
       text: 'Доработка и улучшение документа', 
+      subtitle: 'Следующее обновление •  нет даты'
     }
 ]
 
@@ -31,8 +32,11 @@ function CardBlock3(props) {
             return(
               <div className='element3-item'>
                 <div className='element3-item__picture'>{el.picture}</div>
-                <div className='element3-item__title'>{el.title}</div>
-                <div className='element3-item__text'>{el.text}</div>
+                <div className='element3-item__textblock'>
+                  <div className='element3-item__title'>{el.title}</div>
+                  <div className='element3-item__subtitle'>{el.subtitle}</div>
+                  <div className='element3-item__text'>{el.text}</div>
+                </div>
               </div>
             )
           })}

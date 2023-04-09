@@ -9,7 +9,7 @@
     height: 58px;
     top: 0px;
     background: #FFFFFF;
-    font-family: 'SB Sans Text';
+    font-family: 'Source Sans Pro';
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
@@ -17,9 +17,9 @@
 }
 
 .header-button {
-    margin-left: auto;
     width: 165px;
     height: 32px;
+    margin-left: 80%;
 }
 
 .header-title {

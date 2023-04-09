@@ -1,7 +1,14 @@
 import './Header.css'
-import Icon from '../images/sber tech.svg'
+import Icon from '../images/header_images/Logo.svg'
+import ButtonIcon from '../images/header_images/Group.svg'
+import Button from '../button/Button';
 
-function Header() {
+function Header(props) {
+
+    const text = 'Задать вопрос'
+    const icon = <img src={ButtonIcon}/>
+    const position = 'right'
+
     return(
         <div className='header-block'>
             <img className='header-icon' src={Icon}/>
@@ -11,7 +18,7 @@ function Header() {
                 <div className='header-text2'>
                 <a href = "#">Разработка</a></div>
             </div>
-            {/* <ButtonData className="header-button"/>      */}
+            <Button text={text} icon={icon} position={position}/>
            </div>
     )
 }

@@ -7,5 +7,6 @@
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    background-color: white;
     /*переименовать компонент card/blocks, переделать на flex, по горизонтали, вертикали*/
 }

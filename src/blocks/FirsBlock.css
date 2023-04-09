@@ -9,7 +9,7 @@
     justify-content:space-between;
     background: #F3F7FF;
     align-items: center;
-    font-family: 'SB Sans Text';
+    font-family: 'Source Sans Pro';
     font-style: normal;
     font-weight: 700;
     font-size: 38px;
@@ -19,24 +19,25 @@
 
 
 .first-block__circle1 {
+    position: absolute;
     width: 700px;
     height: 700px;
+    background: #006EFF;
+    filter: blur(350px);
     left: 1525px;
     top: -324px;
-    right: 0px;
-    background: #006EFF;
-    filter: blur(350px)
 }
 
 
 .first-block__circle2 {
-    bottom: 0px;
+    position: absolute;
     width: 700px;
     height: 700px;
+    border-radius: 50%;
+    background: #83A2FF;
+    filter: blur(200px);
     left: -204px;
     top: 686px;
-    background: #83A2FF;
-    filter: blur(200px)  
 }
 
 
@@ -60,6 +61,7 @@
     position: absolute;
     left: 123px;
     top: 290px;
+    animation: spin infinite 10s linear;
 }
 
 .first-block__picture2 {
@@ -74,6 +76,18 @@
     position: absolute;
     left: 1506px;
     top: 696px;
+    animation: spin infinite 10s linear;
 }
+
+@keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+
 
 

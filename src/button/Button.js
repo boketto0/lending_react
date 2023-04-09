@@ -1,9 +1,14 @@
 import "./Button.css";
 
 function Button(props) {
-  const classes = props.className; 
-    
-  return <div className={classes}>{props.children}</div>
+
+  return(
+    <div className={`button button-${props.position} button button-${props.size}`}>
+        <div className="button-text">{props.text}</div>
+        {props.icon && <div>{props.icon}</div>} 
+    </div>
+  )
+
 }
 export default Button;
 
