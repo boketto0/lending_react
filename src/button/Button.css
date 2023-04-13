@@ -17,6 +17,69 @@
     color: #FFFFFF;
     line-height: 16px;
     height: 16px;
+    transition: .7s;
+}
+
+/* .button:hover {
+    background-color: blue;
+    cursor: pointer;
+}
+
+.button:hover .button-text {
+    color:red;
+} */
+
+.button-color {
+    background-color: #006EFF;
+}
+
+.button-color:hover {
+    background-color: blue;
+    cursor: pointer;
+}
+
+.button-border {
+    border: 3px solid #006EFF;
+}
+
+.button-border:hover {
+    border: 3px solid blue;
+    cursor: pointer;
+}
+
+.button-text__border {
+    color:black;
+    line-height: 16px;
+    height: 16px;
+}
+
+.button-border:hover .button-text__border {
+    color:grey;
+}
+
+.button-line__text {
+    color:black;
+    line-height: 16px;
+    height: 16px;
+}
+
+.button-line__text:hover {
+    color: grey;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.button-center {
+    margin-left: 45%;
+}
+
+.button-right {
+    margin-right: 28px;
+}
+
+.button-left {
+    align-self: baseline;
+    margin-top: 32px;
 }
 
 .button-small {
@@ -32,58 +95,4 @@
 .button-large {
     width: 228px;
     height: 64px;
-}
-
-.button-color {
-    background: #006EFF;
-    border: 1px solid #006EFF;
-}
-
-.button-color:hover {
-    background-color: blue;
-    cursor: pointer;
-}
-
-.button-border {
-    border: 1px solid #006EFF;
-}
-
-.button-border:hover {
-    border: 1px solid blue;
-}
-
-.button-text__border {
-    color:black;
-    line-height: 16px;
-    height: 16px;
-}
-
-.button-text__border:hover {
-    color: grey;
-    cursor: pointer;
-}
-
-.button-line__text {
-    color:black;
-    line-height: 16px;
-    height: 16px;
-}
-
-.button-line__text:hover {
-    color: grey;
-    cursor: pointer;
-    text-decoration: underline;
-}
-
-.button-center {
-    margin-left: 45%;
-}
-
-.button-right {
-    margin-right: 28px;
-}
-
-.button-left {
-    align-self: baseline;
-    margin-top: 32px;
 }

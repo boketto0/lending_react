@@ -3,7 +3,7 @@ import Icon from '../images/header_images/Logo.svg'
 import ButtonIcon from '../images/header_images/Group.svg'
 import Button from '../button/Button';
 
-function Header(props) {
+let Header = (props) => {
 
     const text = 'Задать вопрос'
     const icon = <img src={ButtonIcon}/>
@@ -23,6 +23,7 @@ function Header(props) {
             <Button text={text} icon={icon} position={position} size={size} color={color}/>
            </div>
     )
+
 }
 
 export default Header;
