@@ -1,25 +1,30 @@
-import logo from './logo.svg';
+import Button from "./Button";
 import './App.css';
+import Loader from './Loader';
+import ShowLoader from "./ShowLoader";
 
-function App() {
+let App = (props) => {
+
+  const position = 'right'
+  const size = 'small'
+  const color = 'color'
+
+  // text.showLoader = function() {
+  //   onclick
+  // }
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {/* <Button position={position} size={size} color={color}/> */}
+      <label for="pseudoBtn" class="btn">Кнопка</label>
+      <input type="checkbox" id="pseudoBtn"></input>
+      <Loader className='loader'></Loader>
+      {/* <Button onClick={(e) => this.} */}
+      {/* <ShowLoader/>  */}
+
     </div>
   );
+
 }
 
 export default App;
