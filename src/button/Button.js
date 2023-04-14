@@ -13,8 +13,18 @@ let Button = (props) => {
         <div className=" button-text">{props.text}</div>
         <div className="button-text__border">{props.text__border}</div>
         <div className="button-line__text">{props.line__text}</div>
+        {/* <div class="lds-circle">{props.loader2}<div></div>
+        </div> */}
 
         {props.icon && <div className="button-icon">{props.icon}</div>} 
+        {/* {props.loader1 && <div className="loader1">
+            <div></div>
+            <div></div>
+            {props.loader1}
+            <div></div>
+            <div></div>
+        </div>
+        } */}
     </div>
   )
 

@@ -10,6 +10,7 @@ function SecondBlock(props) {
   const position = 'center'
   const border = 'border'
   const text__border ='Все компоненты'
+  // const loader2 = 'loader2'
 
   return(
     <div className="second-block">
@@ -18,7 +19,7 @@ function SecondBlock(props) {
       <div className='second-block__text'>База компонентов для создания интерфейсов любой сложности
       </div>
       <CardBlock1/>
-      <Button size={size} position={position} border={border} text__border={text__border}/>
+      <Button size={size} position={position} border={border}  text__border={text__border}/>
       <div className='second-block__container'>
             <img className='second-block__picture' src={Icon}/>
             <div className="second-block__text__block">

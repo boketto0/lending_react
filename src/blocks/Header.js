@@ -10,6 +10,7 @@ let Header = (props) => {
     const position = 'right'
     const size = 'small'
     const color = 'color'
+    const loader1 = ''
 
     return(
         <div className='header-block'>
@@ -20,7 +21,7 @@ let Header = (props) => {
                 <div className='header-text1'>
                 <a href = "#">Разработка</a></div>
             </div>
-            <Button text={text} icon={icon} position={position} size={size} color={color}/>
+            <Button text={text} /*loader1={loader1}*/ icon={icon} position={position} size={size} color={color}/>
            </div>
     )
 
