@@ -1,5 +1,5 @@
 
-let n = prompt('Введите число')
+let n = 3;
 
 switch(n) {
     case 0:
