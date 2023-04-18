@@ -1,5 +1,5 @@
 import './Footer.css'
-import Button from './Components/Button/Button';
+import {Button} from './Components/Button/Button';
 
 function Footer(props) {
 

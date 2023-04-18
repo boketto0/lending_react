@@ -1,6 +1,6 @@
 import CardBlock2 from "../cardsRow2/CardBlock2";
 import './ThirdBlock.css'
-import Button from "./Components/Button/Button";
+import {Button} from "./Components/Button/Button";
 import Icon1 from '../images/thirdblock_images/thirdblock_picture1.svg'
 import List2 from "../listRow2/List2";
 
