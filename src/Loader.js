@@ -3,7 +3,7 @@ import './Loader.css'
 function Loader() {
 
     return(
-        <div className='loader' id="loader"/>
+        <div className="lds-ellipsis" id="loader"><div></div><div></div><div></div><div></div></div>
     )
 }
 

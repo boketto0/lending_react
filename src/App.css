@@ -1,18 +1,6 @@
-.loader,
-input[type="checkbox"] {
-  display: none;
-}
-
-input[type="checkbox"]:checked ~ .loader {
-  display: block;
-}
-
-/* Стилизация псевдокнопки */
-.btn {
-  display: inline-block;
-  margin-bottom: 4px;
-  padding: 4px 8px;
-  background-color: #ffffff;
-  border: 1px solid #eeeeee;
-  cursor: pointer;
+.app {
+  align-items: center;
+  padding: 32px;
+  display: flex;
+  align-items: center;
 }
