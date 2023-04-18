@@ -9,8 +9,21 @@
     border-radius: 6px;
 }
 
+.button-primary {
+  background-color: #006EFF;
+  width: 165px;
+  height: 32px;
+}
+
+.button-primary:hover {
+  background-color: blue;
+  cursor: pointer;
+}
+
 .button-icon {
     margin-right: 8px;
+    height: 16px;
+    width: 16px;
 }
 
 .button-text {
@@ -20,29 +33,13 @@
     transition: .7s;
 }
 
-/* .button:hover {
-    background-color: blue;
-    cursor: pointer;
+.button-secondary {
+  border: 3px solid #006EFF;
+  width: 196px;
+  height: 48px;
 }
 
-.button:hover .button-text {
-    color:red;
-} */
-
-.button-color {
-    background-color: #006EFF;
-}
-
-.button-color:hover {
-    background-color: blue;
-    cursor: pointer;
-}
-
-.button-border {
-    border: 3px solid #006EFF;
-}
-
-.button-border:hover {
+.button-secondary:hover {
     border: 3px solid blue;
     cursor: pointer;
 }
@@ -53,7 +50,7 @@
     height: 16px;
 }
 
-.button-border:hover .button-text__border {
+.button-secondary:hover .button-text__border {
     color:grey;
 }
 
@@ -61,6 +58,8 @@
     color:black;
     line-height: 16px;
     height: 16px;
+    width: 228px;
+    height: 64px;
 }
 
 .button-line__text:hover {
@@ -69,33 +68,8 @@
     cursor: pointer;
 }
 
-.button-center {
-    margin-left: 45%;
-}
 
-.button-right {
-    margin-right: 28px;
-}
 
-.button-left {
-    align-self: baseline;
-    margin-top: 32px;
-}
-
-.button-small {
-    width: 165px;
-    height: 32px;
-}
-
-.button-middle {
-    width: 196px;
-    height: 48px;
-}
-
-.button-large {
-    width: 228px;
-    height: 64px;
-}
 /* лоадеры */
 
 /*loader1*/
