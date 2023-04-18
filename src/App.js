@@ -6,7 +6,7 @@ import './App.css';
     const position = 'right'
     const size = 'small'
     const color = 'color'
-    const text = 'Задать вопрос'
+    const text = 'Click'
   
     return (
       <Button
