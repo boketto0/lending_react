@@ -9,7 +9,7 @@
     height: 58px;
     top: 0px;
     background: #FFFFFF;
-    font-family: 'SB Sans Text';
+    font-family: 'Source Sans Pro';
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
@@ -17,9 +17,9 @@
 }
 
 .header-button {
-    margin-left: auto;
     width: 165px;
     height: 32px;
+    margin-left: 80%;
 }
 
 .header-title {
@@ -31,10 +31,6 @@
 
 
 .header-text1 {
-    color: #797E8B;
-}
-
-.header-text2 {
     color: #797E8B;
 }
 
@@ -56,12 +52,13 @@ a {
     text-decoration: none;
 }
 
+a:hover {
+    cursor: pointer;
+    color: black;
+    text-decoration: underline;
+}
+
 .header-text__design {
     margin-right: 16px;
     /*кратное 4 или 8 px*/
-}
-
-.heder-button__icon {
-    border-radius: 50%;
-    color: #FFFFFF;
 }

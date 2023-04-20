@@ -14,8 +14,8 @@ function MainBlock() {
             <Header/>
             <ThirdBlock/>
             <SecondBlock/>
-            <Footer/>
             <Fourth/>
+            <Footer/>
         </div>
     )
 }
