@@ -1,5 +1,5 @@
 import './CardBlock3.css'
-import Cards3 from '../cards/Cards3';
+import Cards3 from "../blocks/Components/cards/Cards3"
 import Icon1 from '../images/card3_images/card3.1.svg'
 import Icon2 from '../images/card3_images/card3.2.svg'
 

@@ -1,5 +1,5 @@
 import './CardBlock1.css'
-import Cards1 from '../cards/Cards1';
+import Cards1 from "../blocks/Components/cards/Cards1"
 import Icon1 from '../images/cards1_images/Frame 427318203 (1).svg'
 import Icon2 from '../images/cards1_images/Frame 427318215 (3).svg'
 import Icon3 from '../images/cards1_images/Button group Sets (1).svg'
