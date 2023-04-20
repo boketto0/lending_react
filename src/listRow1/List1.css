@@ -10,7 +10,7 @@
     align-items:center;
     text-align: left;
     background-color: white;
-    width: 477px;
+    width: 700px;
     height: 59px;
     margin-top: 16px;
  }
@@ -21,7 +21,7 @@
   }
   
   .list1-item__text {
-    font-family: 'SB Sans Text';
+    font-family: 'Source Sans Pro';
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
@@ -34,6 +34,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    background: #E2E9FD;
+    width: 59px;
+    height: 59px;
+    border-radius: 50%;
   }
 
   .list1-item__icon {

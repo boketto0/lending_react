@@ -1,0 +1,27 @@
+
+.block1 {
+    width: 100%;
+    height: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+  }
+  
+  .btn {
+    width: 200px;
+    height: 80px;
+    margin-left: 40px;
+    background-color: blue;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .table{
+    width: 100%;
+    margin-bottom: 20px;
+    margin-left: 40px;
+    border: 1px solid black;
+    border-collapse: collapse; 
+  }
