@@ -1,0 +1,161 @@
+.button {
+  position: relative;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content:center;
+  align-items: center;
+  text-align: center;
+  border-radius: 6px;
+}
+
+.button-primary {
+background-color: #006EFF;
+width: 165px;
+height: 32px;
+}
+
+.button-primary:hover {
+background-color: blue;
+cursor: pointer;
+}
+
+.button-icon {
+  margin-right: 8px;
+  height: 16px;
+  width: 16px;
+}
+
+.button-text {
+  color: #FFFFFF;
+  line-height: 16px;
+  height: 16px;
+  transition: .7s;
+}
+
+.button-secondary {
+border: 3px solid #006EFF;
+width: 196px;
+height: 48px;
+}
+
+.button-secondary:hover {
+  border: 3px solid blue;
+  cursor: pointer;
+}
+
+.button-text__border {
+  color:black;
+  line-height: 16px;
+  height: 16px;
+}
+
+.button-secondary:hover .button-text__border {
+  color:grey;
+}
+
+.button-line__text {
+  color:black;
+  line-height: 16px;
+  height: 16px;
+  width: 228px;
+  height: 64px;
+}
+
+.button-line__text:hover {
+  color: grey;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/*loader1*/
+
+.loader1 {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+.loader1 div {
+  position: absolute;
+  top: 33px;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background: black;
+  animation-timing-function: cubic-bezier(0, 1, 1, 0);
+}
+.loader1 div:nth-child(1) {
+  left: 8px;
+  animation: loader11 0.6s infinite;
+}
+.loader1 div:nth-child(2) {
+  left: 8px;
+  animation: loader12 0.6s infinite;
+}
+.loader1 div:nth-child(3) {
+  left: 32px;
+  animation: loader12 0.6s infinite;
+}
+.loader1 div:nth-child(4) {
+  left: 56px;
+  animation: loader13 0.6s infinite;
+}
+@keyframes loader11 {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes loader13 {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+@keyframes loader12 {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(24px, 0);
+  }
+}
+
+/*loader2*/
+
+.lds-circle {
+  display: inline-block;
+  transform: translateZ(1px);
+}
+.lds-circle > div {
+  display: inline-block;
+  width: 64px;
+  height: 64px;
+  margin: 8px;
+  border-radius: 50%;
+  background: blue;
+  animation: lds-circle 2.4s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+}
+@keyframes lds-circle {
+  0%, 100% {
+    animation-timing-function: cubic-bezier(0.5, 0, 1, 0.5);
+  }
+  0% {
+    transform: rotateY(0deg);
+  }
+  50% {
+    transform: rotateY(1800deg);
+    animation-timing-function: cubic-bezier(0, 0.5, 0.5, 1);
+  }
+  100% {
+    transform: rotateY(3600deg);
+  }
+}
+
+
+

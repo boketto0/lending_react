@@ -1,6 +1,6 @@
 import './List3.css';
 import ListWrapper3 from './ListWrapper3';
-import Item from '../images/list3_images/◼️ Background.png'
+import Item from '../images/list3_images/Base Color.svg'
 
 function List3(props) {
 
