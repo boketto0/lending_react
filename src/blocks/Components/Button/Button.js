@@ -1,19 +1,19 @@
 import "./Button.css";
 
-const ButtonTextType = {
+export const ButtonTextType = {
   PRIMARY: "primary",
   SECONDARY: "secondary",
   LINE: "line"
 };
 
-let Button = (props) => {
+export const Button = (props) => {
 
   return(
     <div className={`
         button button-${props.type}
         `}>
         {props.textType === ButtonTextType.PRIMARY && (
-          <div className="button-text">{props.text}</div>
+        <div className="button-text">{props.text}</div>
         )}
         {props.textType === ButtonTextType.SECONDARY && (
           <div className="button-text__border">{props.text}</div>
@@ -26,6 +26,6 @@ let Button = (props) => {
   )
 
 }
-export {Button, ButtonTextType};
+
 
 // передавать пропсом саму иконку, док react, импортировать svg как компонент
