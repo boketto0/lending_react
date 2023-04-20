@@ -1,10 +1,10 @@
 import './CardBlock1.css'
-import Cards1 from '../blocks/Components/cards/Cards1';
-import Icon1 from '../images/cards1_images/card1.1.svg'
-import Icon2 from '../images/cards1_images/card1.2.svg'
-import Icon3 from '../images/cards1_images/card1.3.svg'
-import Icon4 from '../images/cards1_images/card1.4.svg'
-import Icon5 from '../images/cards1_images/card1.5.svg'
+import Cards1 from '../cards/Cards1';
+import Icon1 from '../images/cards1_images/Frame 427318203 (1).svg'
+import Icon2 from '../images/cards1_images/Frame 427318215 (3).svg'
+import Icon3 from '../images/cards1_images/Button group Sets (1).svg'
+import Icon4 from '../images/cards1_images/Frame 427318215 (4).svg'
+import Icon5 from '../images/cards1_images/Frame 427318215 (5).svg'
 
 function CardBlock1(props) {
 

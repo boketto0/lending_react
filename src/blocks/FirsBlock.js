@@ -23,5 +23,3 @@ function FirstBlock() {
 }
 
 export default FirstBlock;
-
-// footer, картинки, Button с props текста и иконки, шрифт

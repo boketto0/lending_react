@@ -1,64 +1,64 @@
 .card-block__elements1 {
-    position:relative;
-    width: auto;
-    padding: 32px;
+  position:relative;
+  width: auto;
+  padding: 32px;
 }
 
 .element1-item {
-    display: flex;
-    justify-content:center;
-    flex-direction: column;
-    align-items:baseline;
-    text-align: left;
-    background-color: white;
-    box-shadow: 0px 8px 28px -6px rgba(24, 39, 75, 0.12), 0px 18px 88px -4px rgba(24, 39, 75, 0.14);
-    border-radius: 10px;
-    width: 334px;
-    height: 259px;
-    padding: 32px;
-    overflow: hidden;
-    cursor: pointer;
-    position: relative;
-    font-family: 'Source Sans Pro';
- }
-  
-  .element1-item__title {
-    color: #101828;
-    font-weight: bold;
-    align-self: baseline;
-  }
-  
-  .element1-item__text {
-    color: #797E8B;
-    margin-top: 8px;
-  }
+  display: flex;
+  justify-content:center;
+  flex-direction: column;
+  align-items:baseline;
+  text-align: left;
+  background-color: white;
+  box-shadow: 0px 8px 28px -6px rgba(24, 39, 75, 0.12), 0px 18px 88px -4px rgba(24, 39, 75, 0.14);
+  border-radius: 10px;
+  width: 334px;
+  height: 259px;
+  padding: 32px;
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+  font-family: 'Source Sans Pro';
+}
 
-  .element1-item__picture {
-    border-radius: 6px;
-    margin: auto;
-    margin-left: 20px;
-  }
+.element1-item__title {
+  color: #101828;
+  font-weight: bold;
+  align-self: baseline;
+}
 
-  .element1-item__circle {
-    position: absolute;
-    top: -100px;
-    left: -50px;
-    width: 300px;
-    height: 300px;
-    border-radius: 50%;
-    background: #E2E9FD;
-    display: block;
-    transition: transform 1s;
-  }
+.element1-item__text {
+  color: #797E8B;
+  margin-top: 8px;
+}
 
-  .element1-item:hover > .element1-item__circle {
-    transform: scale(2.5);
-  }
+.element1-item__picture {
+  border-radius: 6px;
+  margin: auto;
+  margin-left: 20px;
+}
 
-  .element1_content__wrapper {
-    position: relative;
-  }
+.element1-item__circle {
+  position: absolute;
+  top: -100px;
+  left: -50px;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background: #E2E9FD;
+  display: block;
+  transition: transform 1s;
+}
 
-  .card1-2__design {
-    background: #E2E9FD;
-  }
+.element1-item:hover > .element1-item__circle {
+  transform: scale(2.5);
+}
+
+.element1_content__wrapper {
+  position: relative;
+}
+
+.card1-2__design {
+  background: #E2E9FD;
+}

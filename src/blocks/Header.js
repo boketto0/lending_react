@@ -1,9 +1,9 @@
 import './Header.css'
-import Icon from '../images/header_images/Logo.svg'
+import Icon from '../images/header_images/Logo (1).svg'
 import ButtonIcon from '../images/header_images/Group.svg'
 import {Button, ButtonTextType} from './Components/Button/Button';
 
-let Header = (props) => {
+const Header = (props) => {
 
     const icon = <img src={ButtonIcon}/>
     const text = 'Задать вопрос'

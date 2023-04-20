@@ -1,9 +1,45 @@
 import './ButtonTime.css'
 
-function ButtomTime() {
-    return(
-        <div className='color-page'>"Hello"</div>
-    )
+import {useState} from "react";
+
+export default function ButtonTime() {
+    const [time, setTime] = useState(0);
+    const [records, setRecords] = useState([]);
+  
+    let timerId;
+  
+    function handleMouseDown() {
+      timerId = setInterval(() => {
+        setTime((prevTime) => prevTime + 1);
+      }, 1000);
+    }
+  
+    function handleMouseUp() {
+      clearInterval(timerId);
+      setRecords((prevRecords) => [...prevRecords, time]);
+      setTime(0);
+    }
+  
+    return (
+      <div className="block1">
+        <div className="btn" onMouseDown={handleMouseDown} onMouseUp={handleMouseUp}>
+          {!time ? "Кнопка" : `Загрузка ${time} сек`}
+        </div>
+        <table className='table'>
+          <thead>
+            <tr>
+              <th>Время загрузки</th>
+            </tr>
+          </thead>
+          <tbody>
+            {records.map((record, index) => (
+              <tr key={index}>
+                <td>{record} сек</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    );
 }
 
-export default ButtomTime;
