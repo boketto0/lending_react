@@ -6,6 +6,8 @@ export const ButtonTextType = {
   LINE: "line"
 };
 
+// структура подобная enum в typescript
+
 export const Button = (props) => {
 
   return(
