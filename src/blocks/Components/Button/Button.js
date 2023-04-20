@@ -1,4 +1,6 @@
 import "./Button.css";
+import Loader from "../Loader";
+import {useState} from "react";
 
 export const ButtonTextType = {
   PRIMARY: "primary",
@@ -6,16 +8,26 @@ export const ButtonTextType = {
   LINE: "line"
 };
 
-// структура подобная enum в typescript
-
 export const Button = (props) => {
+
+    const [isLoading, setIsLoading] = useState(false);
+
+    const handleClick = (e) => {
+        setIsLoading(true);
+
+    setTimeout(() => {
+        setIsLoading(false);
+        }, 5000);
+    };
 
   return(
     <div className={`
         button button-${props.type}
         `}>
         {props.textType === ButtonTextType.PRIMARY && (
-        <div className="button-text">{props.text}</div>
+          <div className=" button-text" onClick={handleClick}>
+            {!isLoading ? props.text : <Loader/>} 
+          </div>
         )}
         {props.textType === ButtonTextType.SECONDARY && (
           <div className="button-text__border">{props.text}</div>
