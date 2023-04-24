@@ -1,13 +1,13 @@
 import CardBlock2 from "../cardsRow2/CardBlock2";
 import './ThirdBlock.css'
-import {Button, ButtonTextType} from "./Components/Button/Button";
+import {Button, ButtonType} from "./Components/Button/Button";
 import Icon1 from '../images/thirdblock_images/thirdblock_picture1.svg'
 import List2 from "../listRow2/List2";
 
 function ThirdBlock(props) {
 
     const text='Все компоненты'
-    const type = ButtonTextType.LINE
+    const type = ButtonType.LINE
 
     return(
         <div className="third-block">
@@ -17,7 +17,7 @@ function ThirdBlock(props) {
         </div>
         <CardBlock2/>
         <div className="button3-position">
-            <Button text={text} type={type} textType={ButtonTextType.LINE}/>
+            <Button text={text} type={type} Type={ButtonType.LINE}/>
         </div>
         <div className="third-block__container">
                 <img src={Icon1} className="third-block__picture"/>

@@ -1,13 +1,13 @@
 import './Header.css'
 import Icon from '../images/header_images/Logo (1).svg'
 import ButtonIcon from '../images/header_images/Group.svg'
-import {Button, ButtonTextType} from './Components/Button/Button';
+import {Button, ButtonType} from './Components/Button/Button';
 
 const Header = (props) => {
 
     const icon = <img src={ButtonIcon}/>
     const text = 'Задать вопрос'
-    const type = ButtonTextType.PRIMARY;
+    const type = ButtonType.PRIMARY;
 
     return(
         <div className='header-block'>
@@ -18,7 +18,7 @@ const Header = (props) => {
                 <div className='header-text2 header-text__design'>
                     <a href = "#">Разработка</a></div>
             </div>
-            <Button type={type} text={text} textType={ButtonTextType.PRIMARY} icon={icon} />
+            <Button type={type} text={text} Type={ButtonType.PRIMARY} icon={icon} />
         </div>
     )
 

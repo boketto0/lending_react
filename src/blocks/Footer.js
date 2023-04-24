@@ -1,10 +1,10 @@
 import './Footer.css'
-import {Button, ButtonTextType} from './Components/Button/Button';
+import {Button, ButtonType} from './Components/Button/Button';
 
 function Footer(props) {
 
     const text = 'Задать вопрос'
-    const type = ButtonTextType.PRIMARY
+    const type = ButtonType.PRIMARY
 
     return(
         <div className='footer-block'>
@@ -13,7 +13,7 @@ function Footer(props) {
                         Если вы хотите что-то узнать или спросить,
                         {"\n"}оставьте свой вопрос в форме обратной связи
                     </div>
-                    <Button textType={ButtonTextType.PRIMARY} text={text} type={type}/>
+                    <Button Type={ButtonType.PRIMARY} text={text} type={type}/>
                     <div className='footer-text2'>
                         © 2022 АО «СберТех» (является дочерним обществом ПАО «Сбербанк»)
                     </div>

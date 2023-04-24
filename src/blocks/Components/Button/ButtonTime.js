@@ -1,8 +1,8 @@
 import './ButtonTime.css'
-
 import {useState} from "react";
 
 export default function ButtonTime() {
+    
     const [time, setTime] = useState(0);
     const [records, setRecords] = useState([]);
   

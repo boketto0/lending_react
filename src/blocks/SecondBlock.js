@@ -1,13 +1,13 @@
 import CardBlock1 from "../cardsRow1/CardBlock1";
 import './SecondBlock.css'
-import {Button, ButtonTextType} from "./Components/Button/Button";
+import {Button, ButtonType} from "./Components/Button/Button";
 import Icon from '../images/secondblock_images/Illustrations (2).svg'
 import List1 from "../listRow1/List1";
 
 function SecondBlock(props) {
 
   const text ='Все компоненты'
-  const type = ButtonTextType.SECONDARY
+  const type = ButtonType.SECONDARY
 
   return(
     <div className="second-block">
@@ -17,7 +17,7 @@ function SecondBlock(props) {
       </div>
       <CardBlock1/>
       <div className="button2-position"> 
-        <Button type={type} textType={ButtonTextType.SECONDARY} text={text}/> 
+        <Button type={type} Type={ButtonType.SECONDARY} text={text}/> 
       </div>
       <div className='second-block__container'>
             <img className='second-block__picture' src={Icon}/>

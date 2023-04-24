@@ -10,12 +10,22 @@ function MainBlock() {
 
     return(
         <div className='main-block'>
-            <FirstBlock/>
             <Header/>
-            <ThirdBlock/>
-            <SecondBlock/>
-            <Fourth/>
-            <Footer/>
+            <div className="block1">
+                <FirstBlock/>
+            </div>
+            <div className="block2">
+                <SecondBlock/>
+            </div>
+            <div className="block3">
+                <ThirdBlock/>
+            </div>
+            <div className="block4">
+                <Fourth/>
+            </div>
+            <div className="block5">
+                <Footer/>
+            </div>
         </div>
     )
 }

@@ -4,4 +4,26 @@
     width: 100%;
     height: 100%;
     background: white;
+    display: flexbox;
+    flex-flow: row wrap;
+}
+
+.block1 {
+    flex:1;
+}
+
+.block2 {
+    flex:2;
+}
+
+.block3 {
+    flex:3
+}
+
+.block4 {
+    flex:4;
+}
+
+.block5 {
+    flex:5;
 }
