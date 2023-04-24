@@ -1,12 +1,14 @@
 import "./Button.css";
 import Loader from "../Loader";
 import {useState} from "react";
+import {PropTypes} from 'prop-types';
 
-export const ButtonTextType = {
+export const ButtonType = {
   PRIMARY: "primary",
   SECONDARY: "secondary",
   LINE: "line"
 };
+
 
 export const Button = (props) => {
 
@@ -20,24 +22,39 @@ export const Button = (props) => {
         }, 5000);
     };
 
+    const defaultButtonType = ButtonType.PRIMARY;
+
+    const loader1 = "loader1"
+    const loader2 = "loader2"
+
   return(
     <div className={`
-        button button-${props.type}
-        `}>
-        {props.textType === ButtonTextType.PRIMARY && (
+        button button-${props.type || defaultButtonType}`}>
+        {props.icon && <div className="button-icon">{props.icon}</div>} 
+        {props.Type === ButtonType.PRIMARY && (
           <div className=" button-text" onClick={handleClick}>
-            {!isLoading ? props.text : <Loader/>} 
+            {!isLoading ? props.text : <Loader loader1={loader1}/>} 
           </div>
         )}
-        {props.textType === ButtonTextType.SECONDARY && (
-          <div className="button-text__border">{props.text}</div>
+        {props.Type === ButtonType.SECONDARY && (
+          <div className="button-text__border" onClick={handleClick}>
+             {!isLoading ? props.text : <Loader loader2={loader2}/>} 
+          </div>
         )}
-        {props.textType === ButtonTextType.LINE && (
+        {props.Type === ButtonType.LINE && (
           <div className="button-line__text">{props.text}</div>
         )}
-        {props.icon && <div className="button-icon">{props.icon}</div>} 
     </div>
   )
 
 }
 
+Button.propTypes = {
+    type:PropTypes.oneOf([
+        ButtonType.PRIMARY, 
+        ButtonType.SECONDARY, 
+        ButtonType.LINE
+      ]).isRequired,
+      text: PropTypes.string,
+      icon: PropTypes.element,
+}

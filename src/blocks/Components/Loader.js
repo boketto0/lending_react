@@ -1,9 +1,18 @@
 import './Loader.css'
 
-export default function Loader () {
+export default function Loader (props) {
     return(
-        <div class="lds-circle">
-            <div></div>
+        <div>
+            <div className ={`lds-circle-${props.loader1}`}>
+                <div></div>
+            </div>
+
+            <div className ={`lds-ellipsis-${props.loader2}`}>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
         </div>
     )
 }
