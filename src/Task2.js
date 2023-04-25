@@ -7,14 +7,22 @@ export default function Task2() {
 
     function handleIsFocused() {
         setFocus(true);
-        alert("Текст предупреждения");
+    }
+
+    function handleIsBlur() {
+        setFocus(false);
+    }
+
+    function handleAlert() {
+        alert("Вы не заполнили поле!");
     }
 
 
     return(
         <div className="block2">
-            <div className='btn' id='btn' onFocus={handleIsFocused}>
-                {!isFocus? "Сохранить" : "Загрузка"}
+            <div className='btn2' id='btn' onFocus={handleIsFocused} onBlur={handleIsBlur}>
+                <input type={"text"} name="key" placeholder="Заполните поле"/>
+                {!isFocus ? <input className='input' type={"button"}/> : handleAlert()}
             </div>
         </div>
     )
@@ -22,10 +30,3 @@ export default function Task2() {
 
 // При фокусе на поле ввода (например, инпут) 
 // показывать браузерное предупреждение с каким-ниюудь текстом
-
-{/* <input id="elem" type="button" value="Нажми меня!">
-<script>
-  elem.onclick = function() {
-    alert('Спасибо');
-  };
-</script> */}

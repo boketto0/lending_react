@@ -8,12 +8,14 @@ export default function Task1() {
     let timerId;
   
     function handleMouseDown() {
+      console.log("MouseDown");
       timerId = setInterval(() => {
         setTime((prevTime) => prevTime + 1);
       }, 1000);
     }
   
     function handleMouseUp() {
+      console.log("MouseUp");
       clearInterval(timerId);
       setRecords((prevRecords) => [...prevRecords, time]);
       setTime(0);
@@ -21,7 +23,7 @@ export default function Task1() {
   
     return (
       <div className="block1">
-        <div className="btn" onMouseDown={handleMouseDown} onMouseUp={handleMouseUp}>
+        <div className="btn1" onMouseDown={handleMouseDown} onMouseUp={handleMouseUp}>
           {!time ? "Кнопка" : `Загрузка ${time} сек`}
         </div>
         <table className='table'>

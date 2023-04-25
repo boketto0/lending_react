@@ -1,15 +1,14 @@
-import Button from "./Button";
+import {Button, ButtonType} from "./Button";
 import './App.css';
 
-function Home() {
-        const position = 'right'
-    const size = 'small'
-    const color = 'color'
+export default function Home() {
+
     const text = 'Click'
+    const type = ButtonType.PRIMARY;
     
     return(
-         <Button text={text} position={position} size={size} color={color}/>
+        <div className="home">
+            <Button type={type} text={text} Type={ButtonType.PRIMARY}/>
+        </div>
     )
-}
-
-export default Home;
+    }

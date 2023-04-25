@@ -1,31 +1,57 @@
 import "./Button.css";
-import {useState} from 'react'
 import Loader from "./Loader";
+import {useState} from "react";
+import {PropTypes} from 'prop-types';
 
-let Button = (props) => {
+export const ButtonType = {
+  PRIMARY: "primary",
+  SECONDARY: "secondary",
+  LINE: "line"
+};
 
-  const [isLoading, setIsLoading] = useState(false);
 
-  const handleClick = (e) => {
-    setIsLoading(true);
+export const Button = (props) => {
+
+    const [isLoading, setIsLoading] = useState(false);
+
+    const handleClick = (e) => {
+        setIsLoading(true);
 
     setTimeout(() => {
-      setIsLoading(false);
-    }, 5000);
-  };
+        setIsLoading(false);
+        }, 5000);
+    };
+
+    const defaultButtonType = ButtonType.PRIMARY;
 
   return(
-    <div id="btn" className={`
-        button button-${props.position}
-        button button-${props.size}
-        button button-${props.color}
-        button button-${props.border}
-        `}>
-        <div className=" button-text" onClick={handleClick}>
-          {!isLoading ? props.text : <Loader/>} 
-        </div>
+    <div className={`
+        button button-${props.type || defaultButtonType}`}>
+        {props.icon && <div className="button-icon">{props.icon}</div>} 
+        {props.Type === ButtonType.PRIMARY && (
+          <div className=" button-text" onClick={handleClick}>
+              <div className="button-text">{props.text}</div>
+          </div>
+        )}
+        {props.Type === ButtonType.SECONDARY && (
+          <div className="button-text__border" onClick={handleClick}>
+              <div className="button-text__border">{props.text}</div>
+          </div>
+        )}
+        {props.Type === ButtonType.LINE && (
+          <div className="button-line__text">{props.text}</div>
+        )}
     </div>
   )
 
 }
-export default Button;
+
+Button.propTypes = {
+    type:PropTypes.oneOf([
+        ButtonType.PRIMARY, 
+        ButtonType.SECONDARY, 
+        ButtonType.LINE
+      ]).isRequired,
+      text: PropTypes.string,
+      icon: PropTypes.element,
+}
