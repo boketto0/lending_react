@@ -73,3 +73,20 @@
   margin-right: 16px;
 }
 
+.second-block__button {
+  margin-left: 50%;    
+  width: 196px;
+  height: 48px;
+}
+
+.second-block__text__block {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  justify-content: baseline;
+}
+
+.button2-position {
+  margin-left: 45%;
+}
+
